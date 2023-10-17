@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+Buraya calismasini istedigimiz package, class ve method lari Test hiyerarsine
+uygun olarak yazmaliyiz
+
+suite ==> bir vey birden fazla testten olusabilir (regression test, e2e1, e2e2...)
+test ==> test ise belirli bir amac cercevesinde calistirilmasi istenen
+                package/class/method lardan olusur
+-->
+<suite name="istenen class lari calistirma">
+
+    <test name="belirli class lari calistirma">
+
+        <classes>
+            <class name="tests.day15_testNGFrameWork.C01_priority"></class>
+            <class name="tests.day16_testNG_framework.C02_PageClassKullanimi"></class>
+            <class name="tests.day17_configurationProperties.C02_QualitydemyPozitifLoginTest"></class>
+
+
+        </classes>
+
+    </test>
+
+
+</suite>
+

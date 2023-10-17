@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="istenen gruplari calistirma">
+
+    <test name="smoke">
+        <groups>
+            <run>
+                <include name="smoke"></include>
+                <exclude name="regression"></exclude> <!--eger groups tanimlamasi
+                                        icinde regression varsa o test calismaz -->
+
+            </run>
+        </groups>
+        <packages>
+            <package name="tests.*"/>
+        </packages>
+        
+        
+    </test>
+
+</suite>
+
